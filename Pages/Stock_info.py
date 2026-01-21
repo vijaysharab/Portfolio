@@ -6,13 +6,7 @@ import pandas as pd
 session = requests.Session(impersonate="chrome", verify=False)
 #ticker = yf.Ticker("AAPL", session=session)
 
-st.set_page_config(
-    page_title="My Portfolio",
-    page_icon="📈",
-    layout="wide",
-    initial_sidebar_state="expanded",
 
-)
 st.title("📈 Stock Search (Yahoo Finance)")
 
 # Step 1: User types partial name or ticker
