@@ -16,7 +16,7 @@ st.set_page_config(
 st.title("📈 Stock Search (Yahoo Finance)")
 with st.sidebar:
     st.title("Menu")
-    #st.radio("Go to", ["Home", "Portfolio"])
+    st.radio("Go to", ["Home", "Portfolio"])
 
 # Step 1: User types partial name or ticker
 query = st.text_input(
