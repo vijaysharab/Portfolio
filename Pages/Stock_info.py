@@ -6,8 +6,17 @@ import pandas as pd
 session = requests.Session(impersonate="chrome", verify=False)
 #ticker = yf.Ticker("AAPL", session=session)
 
+st.set_page_config(
+    page_title="My Portfolio",
+    page_icon="📈",
+    layout="wide",
+    initial_sidebar_state="expanded",
 
+)
 st.title("📈 Stock Search (Yahoo Finance)")
+with st.sidebar:
+    st.title("Menu")
+    #st.radio("Go to", ["Home", "Portfolio"])
 
 # Step 1: User types partial name or ticker
 query = st.text_input(
